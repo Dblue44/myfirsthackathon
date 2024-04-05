@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "myfirsthackathon"
+version = "0.1.0"
+description = ""
+authors = ["Dmitrii Stakheev, Ilona Sinelnikova, Mikhail Karaev, Skobluk Maksim, Sevankaev Andrei"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.1"
+pydantic = "^2.6.4"
+uvicorn = "^0.29.0"
+celery = "^5.3.6"
+flower = "^2.0.1"
+eventlet = "^0.36.1"
+pydantic-settings = "^2.2.1"
+aiohttp = "^3.9.3"
+asyncio = "^3.4.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
