@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: ["uvicorn", "src.app:app", "--host", "0.0.0.0"]
+    command: ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--reload"]
     restart: unless-stopped
     ports:
       - "8000:8000"

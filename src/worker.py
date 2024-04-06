@@ -2,7 +2,6 @@ from celery import Celery
 
 from core import global_config
 
-
 celery = Celery(
     "app",
     broker=f"redis://{global_config.redis.host}:{global_config.redis.port}",
