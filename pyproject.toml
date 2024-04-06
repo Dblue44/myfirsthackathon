@@ -3,6 +3,9 @@ name = "myfirsthackathon"
 version = "0.1.0"
 description = ""
 authors = ["Dmitrii Stakheev, Ilona Sinelnikova, Mikhail Karaev, Skobluk Maksim, Sevankaev Andrei"]
+packages = [
+    {include = "core", from = "src"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -15,6 +18,9 @@ eventlet = "^0.36.1"
 pydantic-settings = "^2.2.1"
 aiohttp = "^3.9.3"
 asyncio = "^3.4.3"
+redis = "^5.0.3"
+python-multipart = "^0.0.9"
+
 
 [tool.poetry.dev-dependencies]
 
