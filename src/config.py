@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings
 
 class BaseConfig(BaseSettings):
     class Config:
-        env_file = "../../.env"
+        env_file = "../.env"
         env_file_encoding = "utf-8"
         frozen = True
         env_nested_delimiter = '__'
@@ -13,11 +13,5 @@ class BaseConfig(BaseSettings):
         return hash(self.model_dump_json())
 
 
-class RedisConfig(BaseConfig):
-    host: str
-    port: int
-
-
 class Config(BaseConfig):
-    redis: RedisConfig
     token: str
