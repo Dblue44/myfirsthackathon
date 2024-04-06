@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends
 
-from .auth import token_auth
-from core import global_config
-from .photos.routes import router as file_router
+from src.auth import token_auth
+from src.core import global_config
+from src.images.routes import router as file_router
 
 
 app = FastAPI(

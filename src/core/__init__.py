@@ -4,4 +4,4 @@ from .config import Config
 
 global_config = Config()
 
-redis = Redis(host=global_config.redis.host, port=global_config.redis.port)
+global_redis = Redis(host=global_config.redis.host, port=global_config.redis.port)

@@ -8,7 +8,7 @@ celery = Celery(
     broker=f"redis://{global_config.redis.host}:{global_config.redis.port}",
     backend=f"redis://{global_config.redis.host}:{global_config.redis.port}",
     include=[
-        "src.photos.tasks"
+        "src.images.tasks"
     ],
     worker_hijack_root_logger=False
 )
