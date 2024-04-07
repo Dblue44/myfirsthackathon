@@ -4,10 +4,6 @@ version = "0.1.2"
 description = ""
 authors = ["Dmitrii Stakheev, Ilona Sinelnikova, Mikhail Karaev, Skobluk Maksim, Sevankaev Andrei"]
 
-[[tool.poetry.source]]
-name = "PyPI"
-priority = "primary"
-
 [tool.poetry.dependencies]
 python = "^3.10"
 fastapi = "^0.110.1"

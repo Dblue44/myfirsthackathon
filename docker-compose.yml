@@ -1,6 +1,6 @@
 services:
   backend:
-    image: first-hackaton
+    image: dstakheev/myfirsthackhathon
     build:
       context: .
       dockerfile: Dockerfile
