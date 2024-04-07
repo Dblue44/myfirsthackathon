@@ -27,6 +27,11 @@ logger = logging.getLogger(__name__)
 router = APIRouter(tags=["Stitching images"], prefix="/images")
 
 
+@router.get("/")
+async def main() -> str:
+    return "Перейдите на /docs для тестирования через Swagger"
+
+
 @router.post("/stitch", summary="Stitching 2 images")
 async def stick_photos(images: list[UploadFile]) -> StreamingResponse:
     if len(images) != 2:
