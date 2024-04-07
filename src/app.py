@@ -7,7 +7,7 @@ from src.images.routes import router
 config = Config()
 app = FastAPI(
     title="Stitching photos",
-    dependencies=[Depends(token_auth(token=config.token))],
+    # dependencies=[Depends(token_auth(token=config.token))],
     root_path="/api/v1"
 )
 
